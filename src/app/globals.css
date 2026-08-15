@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.nai {
+  --nai-bg: #ffffff;
+  --nai-surface: #f7f8fa;
+  --nai-surface-raised: #ffffff;
+  --nai-border: #e5e7eb;
+  --nai-border-strong: #d1d5db;
+  --nai-text: #111827;
+  --nai-text-soft: #4b5563;
+  --nai-text-faint: #9ca3af;
+  --nai-blue: #2563eb;
+  --nai-blue-bright: #3b82f6;
+  --nai-violet: #7c3aed;
+  --nai-violet-bright: #8b5cf6;
+
+  background: var(--nai-bg);
+  color: var(--nai-text);
+  position: relative;
+}
+
+/* Kept as empty hooks so Hero.tsx doesn't need markup changes — basic look has no background effects. */
+.nai-atmosphere,
+.nai-grid {
+  display: none;
+}
+
+/* Plain card / panel */
+.nai-glass {
+  background: var(--nai-surface-raised);
+  border: 1px solid var(--nai-border);
+}
+
+.nai-gradient-text {
+  color: var(--nai-blue);
+}
+
+.nai-btn-glow {
+  background: var(--nai-blue);
+}
+
+.nai-btn-glow:hover {
+  background: var(--nai-violet);
+}
+
+.nai-card-glow {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nai-card-glow:hover {
+  border-color: var(--nai-border-strong);
+  box-shadow: 0 4px 16px -6px rgba(17, 24, 39, 0.12);
+}
+
+.nai-mono {
+  font-family: var(--font-geist-mono, ui-monospace, monospace);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* AdSense placeholder — clearly a reserved slot, never mistaken for content */
+.nai-ad-slot {
+  border: 1px dashed var(--nai-border-strong);
+  background: var(--nai-surface);
+}
+
+details.nai-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+details.nai-faq-item[open] .nai-faq-chevron {
+  transform: rotate(180deg);
+}
