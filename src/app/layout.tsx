@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "NilsenAI — Descarga videos de TikTok sin marca de agua",
   description:
     "Pegá el enlace del video y descargalo en máxima calidad, sin marca de agua y sin registrarte.",
+  other: {
+    "google-adsense-account": "ca-pub-9128555071862812",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
