@@ -19,6 +19,9 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"
+  ),
   title: "NilsenAI — Descarga videos de TikTok sin marca de agua",
   description:
     "Pegá el enlace del video y descargalo en máxima calidad, sin marca de agua y sin registrarte.",
