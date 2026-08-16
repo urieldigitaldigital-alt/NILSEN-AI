@@ -64,12 +64,6 @@
   text-transform: uppercase;
 }
 
-/* AdSense placeholder — clearly a reserved slot, never mistaken for content */
-.nai-ad-slot {
-  border: 1px dashed var(--nai-border-strong);
-  background: var(--nai-surface);
-}
-
 details.nai-faq-item summary::-webkit-details-marker {
   display: none;
 }
