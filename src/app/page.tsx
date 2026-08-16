@@ -12,11 +12,11 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <AdSlot className="pb-4" />
+        <AdSlot slot="3166936960" format="auto" fullWidthResponsive className="pb-4" />
         <FeatureCards />
         <ApiTeaser />
         <Faq />
-        <AdSlot className="pb-16" />
+        <AdSlot slot="8419263645" format="autorelaxed" className="pb-16" />
       </main>
       <Footer />
     </>
